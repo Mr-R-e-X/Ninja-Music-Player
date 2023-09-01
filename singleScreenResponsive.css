@@ -1,0 +1,173 @@
+/* desktop first approach */
+@media screen and (max-width: 1200px) {
+    /* animated favorites text will be hidden for this viewport width */
+    .favorite {
+        display: none !important;
+    }
+    /* reduced the size of the search bar */
+    .search-bar {
+        width: 30%;
+    }
+    input {
+        font-size: 11px !important;
+    }
+    .song-name-main h1 {
+        font-size: 2.4vw;
+    }
+    .desc {
+        font-size: 1.2vw;
+    }
+}
+@media screen and (max-width: 990px) {
+    /* jumbotron description */
+    .desc {
+        font-size: 1.6vw;
+    }
+    /* more button will be visible and sectoion 2 will be hide by default for this vw */
+    label {
+        display: block;
+    }
+    /* hidden section 2 by default */
+    .section-2 {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        width: 300px;
+        height: 68vh;
+        background-color: #050043;
+        box-shadow: 0px 0px 2px 1px white;
+        right: 0%;
+        top: 23.5%;
+        overflow: scroll;
+        padding-left: 10px;
+        z-index: 5;
+        padding-right: 5px;
+        transition: visibility ease-in-out 0.3s;
+        transition: opacity ease-in-out 0.3s;
+    }
+    /* more button */
+    input[type="checkbox"]:checked ~ .section-2 {
+        visibility: visible;
+        opacity: 1;
+    }
+    .list {
+        overflow: hidden;
+        height: auto;
+    }
+    .list-item {
+        background-color: #1a1e33;
+    }
+    /* hidding section 2 scroll bar */
+    .section-2::-webkit-scrollbar {
+        display: none;
+    }
+    /* when section 2 hides section 1 becomes 100% */
+    .section-1 {
+        width: 100%;
+    }
+    /* jumbotron */
+    .jumbotron {
+        height: 30vw;
+    }
+    /* img in the jumbotron */
+    .jumbotron-image {
+        height: 30vw;
+        width: 30vw;
+    }
+    /* buttons and all */
+    .action-part p {
+        font-size: 2vw;
+    }
+    .btns > button {
+        height: 4vw;
+        width: 11vw;
+        font-size: 1.7vw;
+    }
+}
+@media screen and (max-width: 700px) {
+    /* in this width generally volume buttons will be provided at side */
+    /* so volume slider will be removed */
+    /* followers and author */
+    .followers .author {
+        font-size: 2vw;
+    }
+    /* jumbotron desc */
+    .desc {
+        font-size: 1.8vw;
+    }
+    /* extra icons in the footer at the right hand side */
+    .extras > div:nth-child(3) {
+        display: none;
+    }
+    .extras > div:nth-child(4) {
+        display: none;
+    }
+}
+@media screen and (max-width: 550px) {
+    /* highest priority media query */
+    /* navigation bar section */
+    /* website image */
+    .website-logo img {
+        height: 30px;
+        width: 30px;
+    }
+    /* website name */
+    .website-name h1 {
+        font-size: 3vw;
+    }
+    .website-name h4 {
+        font-size: 2vw;
+    }
+    /* notification bell */
+    .notification-bell img {
+        width: 20px;
+        height: 20px;
+    }
+    /* profile picture */
+    .profile-picture img {
+        width: 30px;
+        height: 30px;
+    }
+    /* notification bell and profile picture */
+    .notification-bell, .profile-picture {
+        margin-top: 8px;
+    }
+    .song-name-main h1 {
+        font-size: 3vw;
+    }
+    /* followers and author */
+    .followers, .author {
+        font-size: 3vw;
+    }
+    /* jumbotron desc */
+    .desc {
+        font-size: 3vw;
+        padding-left: 3px;
+    }
+    /* buttons and all in the jumbotron */
+    .action-part {
+        padding-top: 0px;
+    }
+    /* jumbotron */
+    .jumbotron {
+        height: 60vw;
+        text-align: justify;
+    }
+    /* jumbotron img */
+    .jumbotron-image {
+        height: 60vw;
+        width: 60vw;
+    }
+    /* buttons and stuff */
+    .btns > button {
+        height: 8vw;
+        width: 17vw;
+        font-size: 3.2vw;
+    }
+}
+@media screen and (max-width: 630px) {
+     /* hiding song imgage in the footer area because of less space and cleanliness */
+     #song-image {
+        display: none;
+    }
+}

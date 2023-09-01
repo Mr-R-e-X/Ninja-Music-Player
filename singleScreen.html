@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Playlist</title>
+    <!-- CDN link for bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- CDN link for font aswome -->
+    <script src="https://kit.fontawesome.com/bf0cf320c3.js" crossorigin="anonymous"></script>
+    <!-- Single screen main css link -->
+    <link rel="stylesheet" type="text/css" href="singleScreen.css">
+    <!-- single screen responsive css link -->
+    <link rel="stylesheet" type="text/css" href="singleScreenResponsive.css">
+</head>
+<body>
+    <nav class="navigation-bar">
+        <!-- This div contains the website logo and title -->
+        <div class="title-combo">
+          <!-- This div is for logo image -->
+          <div class="website-logo mt-2">
+            <img src="https://www.bhavyatyagi.in/projects/Music-Player/assets/logo.png">
+          </div>
+          <!-- This div is for logo title -->
+          <div class="website-name">
+            <h2>Ninja's</h2>
+            <h6>Music Player</h6>
+          </div>
+        </div>
+        <!-- This is for animated Favorite button section -->
+        <div class="favorite ">
+          <h6> Favorites </h6>
+        </div>
+        <!-- This is Search Bar -->
+        <div class="search-bar">
+          <!-- This is for Magnify-Glass icon -->
+          <div>
+            <i class="fas fa-search search-ico"></i>
+          </div>
+          <input type="text" name="search" placeholder="Search">
+          <!-- This is for MIC icon -->
+          <div>
+            <i class="fas fa-microphone mic-ico"></i>
+          </div>
+        </div>
+        <!-- This is for Notification bell icon  -->
+        <div class="notification-bell">
+          <i class="fa-solid fa-bell fa-xl" style="color: #eef1f6;"></i>
+        </div>
+        <!-- This is for profile picture -->
+        <div class="profile-picture">
+            <img src="https://i.pinimg.com/736x/1a/63/21/1a63217f0996d980cc6dadde4b27802c.jpg">
+        </div>
+      </nav>
+      <!-- this is the main center part of the page and it is divided into two sections, namely section 1 and section 2 -->
+      <!--  separated by two aside tags-->
+      <main>
+        <!-- aside part 1 -->
+        <aside class="aside section-1">
+            <!-- this is for the jumbotron -->
+            <div class="jumbotron">
+                <div class="jumbotron-image">
+                    <!-- there is nothing is in this div because all the images are added by css -->
+                </div>
+                <!-- jumbotron details -->
+                <div class="jumbotron-details">
+                    <!-- descriptive part of the jumbotron this will contain name, number of follower etc -->
+                    <div class="descriptive-part">
+                        <div class="song-name-main">
+                            <h1> ColdPlay </h1>
+                        </div>
+                        <div class="followers">
+                            23.3M Followers
+                        </div>
+                        <p class="author">
+                          British Band  
+                        </p>
+                        <!-- short description about the author -->
+                        <p class="desc">
+                            Coldplay are a British rock band formed in London in 1997. They consist of vocalist and pianist Chris Martin, 
+                            guitarist Jonny Buckland, bassist Guy Berryman, drummer Will Champion and creative director Phil Harvey. They 
+                            met at University College London and began playing music together from 1997 to 1998, initially calling themselves 
+                            Big Fat Noises and later Starfish.
+                        </p>
+                    </div>
+                    <!-- action part -->
+                    <div class="action-part">
+                        <!-- action buttons -->
+                        <div class="btns">
+                            <button>Play All</button>
+                            <button>Follow</button>
+                        </div>
+                        <p style="margin-top: 1%;"> 247 Tracks | 128 Albums </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Now playlist part begins -->
+            <div class="playlist-items">
+                <!-- playlist items -->
+                <div class="playlist-item">
+                    <div class="list-item1">
+                        <!-- <div> 01 </div> -->
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b2731551c93dfa33ea4f30ef4eea" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 120px;"> 
+                            <h6> Bones </h6>
+                            <p class="author-name"> Imagine Dragons </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        2:49
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="list-item1">
+                        <!-- <div> 02 </div> -->
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b273ccb8442d203758367bccdc24" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 120px;">
+                            <h6> Waka Waka </h6>
+                            <p class="author-name"> Shakira </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:20
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="list-item1">
+                        <!-- <div> 03 </div> -->
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b273b4f3977c78f3c6428e498cfb" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 120px;">
+                            <h6>
+                                Maan Meri Jaan (Afterlife)
+                            </h6>
+                            <p class="author-name">
+                                King, Nick Jonas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:05
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="list-item1">
+                        <!-- <div> 04 </div> -->
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b273b46f74097655d7f353caab14" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 120px;">  
+                            <h6>
+                                As It Was
+                            </h6>
+                            <p class="author-name">
+                                Harry Styles
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        2:46
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="list-item1">
+                        <!-- <div> 05 </div> -->
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d00001e02aac03d0969a585346e49038d" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 120px;">
+                            <h6> The Drum </h6>
+                            <p class="author-name"> Alan Walker </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:08
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="list-item1">
+                        <!-- <div> 06 </div> -->
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d00001e02e4855f57cf9ffcf827fdd6e2" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 120px;">
+                            <h6> Headlights </h6>
+                            <p class="author-name"> KIDDO</p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        2:40
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="list-item1">
+                        <!-- <div> 07 </div> -->
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b273276186e29f0629d0cdd4603a" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 120px;">
+                            <h6>
+                                Cupid
+                            </h6>
+                            <p class="author-name">
+                                Fifty Fifty
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        2:54
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="list-item1">
+                        <!-- <div> 08 </div> -->
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b273c07d5d2fdc02ae252fcd07e5" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 120px;">
+                            <h6>
+                                Life Goes On
+                            </h6>
+                            <p class="author-name">
+                                Ed Sheeran
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:42
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="list-item1">
+                        <!-- <div> 09 </div> -->
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b2733dd756eb4221beb661d7922b" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 120px;">
+                            <h6> Dirty Little Secret </h6>
+                            <p class="author-name"> Zack Knight </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:03
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="list-item1">
+                        <!-- <div> 10 </div> -->
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d00001e020cff328dbb47a1c180c5d671" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 120px;">
+                            <h6> Unholy </h6>
+                            <p class="author-name"> Sam Smith, Kim Petras </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        2:38
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="list-item1">
+                        <!-- <div> 11 </div> -->
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b273eb2932e3daa38aa1874911a0" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 120px;">
+                            <h6> Love Me Back </h6>
+                            <p class="author-name"> Trinidad Cardona </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        3:14
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- playlist item -->
+                <div class="playlist-item">
+                    <div class="list-item1">
+                        <!-- <div> 12 </div> -->
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b273ef57183066d6cac0cabb85c6" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 120px;">
+                            <h6> Dreamer </h6>
+                            <p class="author-name"> Alan Walker </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        2:35
+                    </div>
+                    <div class="right">
+                        <div>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- one aside section is completed -->
+        <!-- now the second will start from here -->
+        <!-- the aside section will collapse and a more button will shown to you -->
+        <!-- clicking on the more button user can see the aside section 2 -->
+        <!-- this is the label for more button -->
+        <label for="more"><i class="fas fa-angle-double-left"></i></label>
+        <!-- this is that more button -->
+        <!-- and this is the check box. this will always be hidden -->
+        <input type="checkbox" id="more">
+        <aside class="aside section-2">
+            <!-- similar class will be applicable to both similar artist and recently played -->
+            <div class="similar">
+                <!-- section heading, which also contains the view all button -->
+                <div class="section-heading">
+                    <h2>Similar Artist</h2>
+                    <div class="view-all-button">
+                        View All
+                    </div>
+                </div>
+                <!-- list is the container for the contents of similar artist -->
+                <div class="list">
+                    <!-- item -->
+                    <div class="list-item">
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b2739707c3215a3410cf33eb7623" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 120px;">
+                            <h6> Baby </h6>
+                            <p class="author-name"> Justin Beiber </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name"> 3:30 </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="list-item">
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b2738ffc294c1c4362e8472d14cd" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 120px;">
+                            <h6> Drivers license </h6>
+                            <p class="author-name"> Olivia Rodrigo </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name"> 4:08 </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="list-item">
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b27371a88589bf0d0a1109d4ac87" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 120px;">
+                            <h6> Wellerman </h6>
+                            <p class="author-name"> Nathan Evans </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name"> 2:33 </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="list-item">
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 120px;">
+                            <h6> Save your tears </h6>
+                            <p class="author-name"> Weeknd </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name"> 3:30 </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="list-item">
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b273bd26ede1ae69327010d49946" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 120px;">
+                            <h6> Levitating </h6>
+                            <p class="author-name"> Dua Lipa </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name"> 4:26 </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="list-item">
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d00001e02d6c5553cf086cb94a974ac84" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 120px;">
+                            <h6> Head & Heart </h6>
+                            <p class="author-name"> Joel Corry </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name"> 2:47 </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="list-item">
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67706f000000020d5e6f861f423ecfac53610b" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 120px;">
+                            <h6> Goosebumps </h6>
+                            <p class="author-name"> Travis Scott & HVME </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="author-name"> 2:47 </p>
+                        </div>
+                    </div>
+                </div>
+            <!-- recently played -->
+            <div class="similar">
+                <!-- section headings, which also contains the view all button -->
+                <div class="section-heading">
+                    <h2> Recently Played </h2>
+                    <div class="view-all-button">
+                        View All
+                    </div>
+                </div>
+                <div class="list">
+                     <!-- item -->
+                     <div class="list-item">
+                        <div>
+                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAKEBAQEBAKEBAJDRYNDQkJDRsICQ4WIB0iIiAdHx8kKDQsJCYxJx8fLTstMT03OkREIys9QD82NzQtOisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAKAAoAMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAABAgMEAAUGBwj/xAA5EAABBAAEAggEAwcFAAAAAAABAAIDEQQSITEFQQYiMlFhcYHwE0KRoVKx8QcUI3LB0eEzU1Rig//EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDylzaSOUpAUZA96oETALKRpAQE4F/41KUBSMkIIDQS53OszvRAXMyGnGj+HdwQZr7oLquj3QTFcQIc/LEx2pdOf4p9F3eG/ZhAG0ZpNd6jFIPGyfAjz0WALtOlXQ2Xh8mry+OQUJq1ruIXN4rhUkIzCnCr6varyQUKWUiFiBSLQpMdUNkAIQR3RQLIdB5lInk2Hr5JCUCkoFElAoJnJD75KQt97pXMQRo1SwilgKB6V7o3MI52u3rlutfazCzGGRrvwOtB790fnBFcyMwXUwjRed9GuMskjieNXkZTGO2a7grHHelE7JWsDZII9CQ1ufGS+Q5IOx45wpuPiLCQDu1xFi15ZxjAS4Qva9pY9ujb7Lh3+S9J6N404yMSCPGRjasa6pHeNKLpzwwYrCvdXXwwztcO1XMIPAMQzUuAIBNGhTA7mLUIX0LjuHYSfCuwha1rRh7bA0fCYereYDYnx71887IA4IInVYgBCGyJQJQLKdB6pCVJLs3zKhIQYUAVloWgtO/P6pKtSOKQn3yQIQspYSsQEFRvAsdxUgReywgvcG4i7BYqCVpcGwytdlL8+l6r6MxPDoccGPc1pOUFslWvl0r3LoP0x/foYY82HYcM3JO2drg57QN2na/r6IO5wUQiblAaA3YNGUIcT/0ZAfmYR9lFgcXHKSI5GPo6hpzOCTjk4bE4WLI23QaqXi8Q4bJiH5LwGFe05tC1+UtA9bH1XzzC+qB2rzpeh9JovjwY9gDicLHHiurYaKfWvoT9F5wCgtOCFUka7LvsfqE9+9wgFeSBTJUAmbQHqolNMdB5lQEoAUKRQQWne+ajcUznEqMlBl++awpR75IoGtM1LSjlJHPyHyoFO5/VdB0U4jHA8ule2NsTeoRGZZbJo0udtFh1QewDHYUxifCvx4ljpzcTJ1Gv57bFDH9J3Ob8STLcjOwNOtXILznC8bkjaGAuIb2WDZdz0L4C7GOGKxGUiPrQ4W7F97kHZ9EeCVhJjiGgv4q0/Ejdrljqg36Lwni2E/dZ5of+NK6OzuQDovoz9/BYTtlFd6+eOkc3xcZiXfjxDj90FIGwjC+jTs2Xvbq5qQgjkUCEFx0Z5EEHUEKOq90lhe5gNAkAjSrCv4QsxHOiN4zugozdhv8AMfNVytrxHDxxt3o7ta3W/RasoFRWIoJXFRkqVw1SuHggjTAWlI97pwP1QYAoZXWfLRTu0BPcqqArAsCaMWUGMNa/qu36PdNDhcrXtsDRz26WuUOCLgMupPyjcqmD4oPV+JdMWQwl+ZrjLZiY3tu/wvLJZDI4uO8ji4+qW78SdO9N8IlxaNS36ILuBIkBYRZHY5u8lHK1vVI2c7Lro7RS8Ogc1wJFU7ZQzMLc4/2pfsf0QbDCNBvkA7QclIcCyRwc0uY7NoYtPMrXxT0B/KXH1KuYKbr76NCCzxTDfwn5QLb13E6u03XPFdUXCQEHaQFpHOly2IYY3Fp+RxCBaRpICmtBZJ97lRl1JyffNIXIEJtMECQigEoppVelPM6h5qAIMpPENQkTM3Hmg3WEcQ0EaFhtruYPIqpxGFriZYwA2TV8TdfguO48uYPpyVnCu0VOfRzhsQdDeU0grtOTXmOz333q1wiPM8+AVJ+/srZcCIznxag2j4KII0I+ipY+G3ONV8RlGtrGq2+QHS/7qOSPkfQ96DmQ6gPKvurOCfr7tDiOE+Bt2XO0B3HgqkTyg6aNwI3+i1HHI6e12wkFHzHsKzhJaHohxUZ4z3xHNp9Cg0tIoBGkE7yVGUXH2N0l+90GJsyVEIBJ4qIlSynZRuFIAnj3HmktNHuEG0wrqVbiI64PeFYhB3A0q1DxAaA+NIKSvcHNSDyKoWrfDn5ZB7CDpWu1BSY7GsgFnUu7LOZVSXGBnVbRcd+bWrX4vBv1d1nk6udugrYzEumdbvRo7LVE1p96IPN+u/LVGPXkT4BBsMLen9NStg1gFg0b0I3AvSlrsMSdK/8AOLtepVsEt1OUZT1YWa6+KDSvYWEtO7CWpVa4kQXlw+bqnzCqkoJCR71QJHh/RC0pQYSszJSsCAv1QOyBQ2QFYsQQXcLNmoHfl4qXGC2/da4H3srJn+I2jv8AmgrqWEG7uj91CmCC7H1Nv7q/hsZfVO/2WshOYeIRfe/cgziTw5+gqt+4qKFubnr3DqkppiHDNzBo9yja0O5gVvpZQXYYyN9B3NNk+asgkCxoBoGfMqOGGvVcG+LjZV8SEaPAB5SN7BQUcSwlp00Y+yfNVFs53WKOUB1kkmlqygJSFM4+9khKDAigsQFvvvUojLtgomqeInkghc0jQpaVuRubevPYqqRXogykWmkKWEIMu0wSohA0by02rxcCLv8AutesQSycxyJ0o9VCFr7JbmsbkJsNAZTV0Bu7dbKGANJrZrQgoOeB2w7zoNUzZSQMhsD5NM4PkVJ8EwuBu2SdU2LDTySSuAoPYB4kdX6jZBWxUmc2bDgKNjJfooFamaWjfM06sN5y0qsEAPvkltS5D4IZPH+qCJFStYOev2Tk1y0QQNC3HAuCzcRcGRgAOdXxpepEFpyF1PQnir8PIG1mFOpu7hdbINpxj9nuKwcLpmvhxDYhmkjw4LJmt5kA7+i4aVgsEahwuxsvoCPjLHxCmzEvaCcseaMAjndaLxPH8GxGFndA+KUvcS+NkTDIXtJOorkg1ORHLa2mH4RiJTlZBi3O/AIXZvyUU0T4CWSMcxzDRZI3I8eiCj8I8rPpQWCM9x/JXC6vdJ4xm2I035lBr8h7j9Fagw4GrqA/7bK2G5dt+9YYc4oiq7JGhCBIY8jg5peRdOa8aEKcXG4jUtftetFRMnLRlcKc3Q8gfFRvneBs4i/w2EE0zw5hadCRpeygdJmB2PhuVG+Zr7BDwT9E2Hw5aSSduXJBTeMpIs13ckhVjGinear0g//Z" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 110px;">
+                            <h6> Love the way you lie </h6>
+                            <p class="author-name"> Eminem </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- item -->
+                     <div class="list-item">
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d00001e0264a85b3c99a354558cacf9a4" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 110px;">
+                            <h6> Let her go </h6>
+                            <p class="author-name"> Passenger </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- item -->
+                     <div class="list-item">
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b273d08209944468440145f01524" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 110px;">
+                            <h6> Thinking out Loud </h6>
+                            <p class="author-name"> Ed Sheeran </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- item -->
+                     <div class="list-item">
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b273297b2c53224bd19162f526e3" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 110px;">
+                            <h6> Chandelier </h6>
+                            <p class="author-name"> Sia </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- item -->
+                     <div class="list-item">
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b273571390d334bfde0505f88bf2" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 110px;">
+                            <h6> Dark Horse </h6>
+                            <p class="author-name"> Kety Perry </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- item -->
+                     <div class="list-item">
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b27323d302c1290685258a400ad0" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 110px;">
+                            <h6> Hello </h6>
+                            <p class="author-name"> Adele </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- item -->
+                     <div class="list-item">
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b2739abdf14e6058bd3903686148" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 110px;">
+                            <h6> Blank Space </h6>
+                            <p class="author-name"> Tylor Swift </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            
+                        </div>
+                    </div>
+                     <!-- item -->
+                     <div class="list-item">
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b273cafb6618aeac7977afb815ce" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 110px;">
+                            <h6> Sorry </h6>
+                            <p class="author-name"> Justin Beiber </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- item -->
+                     <div class="list-item">
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d00001e0275c9daf36578bdf30645492f" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 110px;">
+                            <h6> See you again </h6>
+                            <p class="author-name"> JWiz Knalifa </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- item -->
+                     <div class="list-item">
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b2735a61e19eaffec620c1899c47" alt="">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left: 110px;">
+                            <h6> Dé Ja Vu </h6>
+                            <p class="author-name"> Olivia Rodrigo </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+          </div> 
+        </aside>
+      </main>
+
+
+      <!-- footer part -->
+      <!-- it's position will be fixed to the screen buttom -->
+      <footer>
+        <div class="active-song-description">
+          <!-- song image -->
+          <div id="song-image">
+            <img src="https://i.scdn.co/image/ab67616d0000b273629dc9e2e3bc20bbd7d92e4a" alt="">
+          </div>
+          <!-- song name and author -->
+          <div class="song-desc">
+            <div> Baby ft. Ludacris </div>
+            <div> Justin Bieber </div>
+          </div>
+          <!-- heart icon and ban icon -->
+          <div class="heart-and-ban-icon">
+            <span> <i class="far fa-heart"></i> </span>
+            <span> <i class="fas fa-ban"></i> </span>
+          </div>
+        </div>
+        <!-- these are for main player controls -->
+        <div class="player">
+          <div class="controls">
+            <div> <i class="fas fa-random"></i> </div>
+            <div> <i class="fas fa-step-backward"></i> </div>
+            <div> <i class="fas fa-pause-circle"></i> </div>
+            <div> <i class="fas fa-step-forward"></i> </div>
+            <div> <i class="fas fa-redo"></i> </div>
+          </div>
+          <!-- this is for the Slider -->
+          <div id="slider">
+            <!-- current time -->
+            <div class="time mb-2">1:25</div>
+            <div class="slidecontainer">
+              <input type="range" min="0" max="100" value="0" class="slider" id="myRange" >
+            </div>
+            <!-- end time -->
+            <div class="time mb-2"> 3:33 </div>
+          </div>
+        </div>
+        <!-- other icons including the volume slider and all -->
+        <div class="extras">
+          <div> <i class="fas fa-list-ul"></i> </div>
+          <div> <i class="fas fa-laptop"></i> </div>
+          <div> <i class="fas fa-volume-up"></i> </div>
+          <div class="slidecontainer" style="width: 35%;">
+          <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+        </div>
+        <div>
+          <i class="fas fa-expand-alt"></i>
+        </div>
+        </div>
+      </footer>
+
+    <!-- CDN links for bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" 
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" 
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</body>
+</html>
